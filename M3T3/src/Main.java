@@ -1,6 +1,16 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
+    public static class Coche {
+        private int puertas=3;
+
+        public void aumentarPuertas(){
+            this.puertas+=1;
+        }
+        public int getPuertas(){
+            return this.puertas;
+        }
+    }
 
     public static void main(String[] args) {
 
@@ -14,4 +24,6 @@ public class Main {
     public static int sumar(int a,int b, int c){
         return a+b+c;
     }
+
+
 }
