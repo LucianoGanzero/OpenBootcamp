@@ -1,6 +1,6 @@
 class Alumno:
-    _nombre = ""
-    _nota = 0
+    _nombre =""
+    _nota= 0
     def __init__(self, nombre, nota):
         self._nombre = nombre
         self._nota = nota
