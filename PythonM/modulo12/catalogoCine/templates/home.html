@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <h1>Catalogo de peliculas</h1>
+        <p>Encontra todas las peliculas que estas buscando</p>
+    </header>
+    <section>
+        {% for director in directores %}
+            <div>
+                <div>
+                    <h4>{{director.nombre}}</h4>
+                </div>
+                <div>
+                    <p>Sus peliculas que tenemos son: </p>
+                    <ul>
+                        {% for pelicula in peliculas %}
+                            {% if director == pelicula.director %}
+                                <div>
+                                    <li>{{pelicula.nombre}}</li>
+                                    <span>{{pelicula.descripcion}}</span>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+
+            </div>
+        {% endfor %}
+    </section>
+</body>
+</html>
